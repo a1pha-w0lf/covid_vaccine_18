@@ -25,7 +25,7 @@ def check_availalibity_18(district_id):
     #jprint(content)
     for i in range (len(content["centers"])):
         for j in range(len(content["centers"][i]["sessions"])):
-            if content["centers"][i]["sessions"][j]["min_age_limit"] == 18 and content["centers"][i]["sessions"][j]["available_capacity"] != 0:
+            if content["centers"][i]["sessions"][j]["min_age_limit"] == 45 and content["centers"][i]["sessions"][j]["available_capacity"] != 0:
                 return {"Name":content["centers"][i]["name"], "Address": content["centers"][i]["address"], "Available Capacity": content["centers"][i]["sessions"][j]["available_capacity"] }
 
 
