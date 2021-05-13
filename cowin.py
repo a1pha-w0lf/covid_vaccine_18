@@ -1,4 +1,4 @@
-from bs4 import BeautifulSoup as soup
+
 import requests
 from datetime import date 
 import json
